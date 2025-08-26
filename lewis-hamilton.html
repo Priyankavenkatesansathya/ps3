@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lewis Hamilton</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+      color: white;
+    }
+
+    .hero-section {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .hero-section video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(6px); /* ✅ vendor-prefixed version first */
+  backdrop-filter: blur(6px);        /* ✅ standard version after */
+}
+
+
+    .hero-content h1 {
+      font-size: 4rem;
+      margin-bottom: 1.5rem;
+      text-shadow: 2px 2px 20px #00f0ff;
+    }
+
+    .hero-content p {
+      max-width: 900px;
+      font-size: 1.2rem;
+      line-height: 1.7;
+      text-shadow: 1px 1px 10px #111;
+    }
+
+.scroll-section {
+  width: 100%;
+  height: 100vh;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-section img {
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+}
+.hero-section {
+  position: relative;
+  height: 100vh; /* full screen */
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-section video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(6px);  /* ✅ correct order */
+  backdrop-filter: blur(6px);
+}
+
+.scroll-section {
+  min-height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.scroll-section img {
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+}
+.lewis-footer {
+  background-color: #000;
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lewis-footer img {
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+  transition: transform 0.4s ease;
+}
+
+.lewis-footer img:hover {
+  transform: scale(1.02);
+}
+
+
+/* Compact Top Bar */
+.top-bar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 10px 20px;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4); /* transparent background */
+ -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.home-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #00bcd4;
+  padding: 6px 12px;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+
+.home-link:hover {
+  background-color: #008ba3;
+}
+
+.logo-icon {
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+}
+
+  </style>
+</head>
+<body>
+  <!-- Compact Top Bar -->
+<header class="top-bar">
+  <a href="index.html" class="home-link">
+    <img src="assets/images/lewis-logo.png" alt="Lewis Hamilton Logo" class="logo-icon">
+    <span>Home</span>
+  </a>
+</header>
+
+  <!-- Video Section -->
+  <section class="hero-section">
+    <video autoplay muted loop>
+      <source src="assets/video/lewis.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+      <h1>Lewis Hamilton</h1>
+     <p>
+  Lewis Hamilton is more than just a seven-time Formula 1 World Champion — he’s a symbol of resilience, innovation, and unstoppable ambition. Rising from humble beginnings in Stevenage, England, Hamilton broke barriers as the first and only Black driver in Formula 1, carving a legacy not just with speed but with strength. His dominance on the track is defined by precision, courage, and an unrivaled will to win, making him one of the most successful drivers in the sport’s history. Off the track, Lewis is a global icon advocating for diversity, environmental sustainability, animal rights, and mental health awareness. Through his actions and voice, he has reshaped the image of what it means to be an athlete, using his platform to call out injustice and uplift the next generation. Whether he’s taking pole position at Silverstone or speaking on global stages, Lewis Hamilton is not just racing for trophies — he’s racing for change, equity, and a better future for all.
+</p>
+
+    </div>
+  </section>
+
+  <!-- Footer with Lewis Image -->
+  <footer class="lewis-footer">
+    <img src="assets/images/lewis-hero.jpg" alt="Lewis Hamilton" />
+  </footer>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="scroll-section">
+  <img src="assets/images/lewis-hero.jpg" alt="Lewis Hamilton in action" />
+</section>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sebastian Vettel</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Orbitron', 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* Header */
+    .header-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 8px 20px;
+      background: rgba(0, 0, 0, 0.4);
+      -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .header-home {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      background-color: #e10600;
+      padding: 6px 14px;
+      border-radius: 30px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 0.9rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .header-home:hover {
+      background-color: #b50000;
+    }
+
+    .logo-icon {
+      width: 28px;
+      height: 28px;
+      margin-right: 10px;
+    }
+
+    /* Main Content Layout */
+    .video-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      padding-top: 50px;
+    }
+
+    video {
+      height: 100%;
+      width: 60%;
+      object-fit: cover;
+    }
+
+    .text-content {
+      width: 40%;
+      padding: 50px 30px;
+      background: rgba(0, 0, 0, 0.5);
+      -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: blur(8px);
+      z-index: 2;
+      box-shadow: 0 0 30px rgba(255, 0, 0, 0.4);
+      border-left: 2px solid #e10600;
+    }
+
+    .text-content h1 {
+      font-size: 3rem;
+      color: #e10600;
+      text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+      margin-bottom: 20px;
+    }
+
+    .text-content p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    footer {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 0;
+      background-color: #111;
+    }
+
+    footer img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    footer img:hover {
+      transform: scale(1.05);
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+  </style>
+</head>
+<body>
+
+  <!-- Compact Header -->
+  <header class="header-bar">
+    <a href="index.html" class="header-home">
+      <img src="assets/images/lewis-logo.png" alt="Logo" class="logo-icon">
+      <span>Home</span>
+    </a>
+  </header>
+
+  <!-- Video + Text Layout -->
+  <div class="video-container">
+    <video autoplay loop controls>
+      <source src="assets/video/vettel.mp4" type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </video>
+
+    <div class="text-content">
+      <h1>Sebastian Vettel</h1>
+      <p>
+        Sebastian Vettel is one of Formula 1’s most respected champions, known for his intellect, precision, and dominance in the early 2010s. A four-time World Champion with Red Bull Racing, Vettel’s driving was a blend of ruthless consistency and technical mastery. His calm demeanor behind the wheel made him unstoppable when in the lead, and his record-breaking success defined a generation of racing.
+
+        Beyond his titles, Vettel is admired for his outspoken support for environmental causes, LGBTQ+ rights, and diversity in motorsport. He is not just a driver but a philosopher on four wheels — always ready to challenge norms, lead change, and stand up for what he believes is right. With his sharp wit, legendary racecraft, and relentless spirit, Sebastian Vettel is etched into the heart of Formula 1 forever.
+      </p>
+    </div>
+  </div>
+
+  <!-- Footer with Images -->
+  <footer>
+    <img src="assets/images/vettel1.jpg" alt="Sebastian Vettel 1">
+    <img src="assets/images/vettel2.jpg" alt="Sebastian Vettel 2">
+     <img src="assets/images/vettel3.jpg" alt="Sebastian Vettel 1">
+    <img src="assets/images/vettel4.jpg" alt="Sebastian Vettel 2">
+    <img src="assets/images/vettel5.jpg" alt="Sebastian Vettel 2">
+  </footer>
+
+</body>
+</html>

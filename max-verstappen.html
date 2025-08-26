@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Max Verstappen</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+      background-color: #000;
+      color: #fff;
+    }
+
+    .video-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    video {
+      height: 100%;
+      width: 60%;
+      object-fit: cover;
+    }
+
+    .text-content {
+      width: 40%;
+      padding: 50px;
+      background: rgba(0, 0, 0, 0.6);
+      -webkit-backdrop-filter: blur(6px);
+      backdrop-filter: blur(6px);
+      z-index: 2;
+    }
+
+    .text-content h1 {
+      font-size: 3rem;
+      color: #ff4f00;
+      margin-bottom: 20px;
+    }
+
+    .text-content p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    footer {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 0;
+      background-color: #111;
+    }
+
+    footer img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    footer img:hover {
+      transform: scale(1.05);
+    }
+    .header-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px 20px;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+.header-home {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: #ff4f00;
+  padding: 6px 14px;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.header-home:hover {
+  background-color: #e54400;
+}
+
+.logo-icon {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+}
+
+
+  </style>
+</head>
+<body>
+  <header class="top-bar">
+  <a href="index.html" class="home-link">
+    <img src="assets/images/lewis-logo.png" alt="Lewis Hamilton Logo" class="logo-icon">
+    <span>Home</span>
+  </a>
+</header>
+
+
+  <!-- Main Section with Video and Text -->
+  <div class="video-container">
+    <video autoplay loop controls>
+      <source src="assets/video/max.mp4" type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </video>
+
+    <div class="text-content">
+      <h1>Max Verstappen</h1>
+      <p>
+        Max Verstappen has become the face of a new era in Formula 1 — fast, fearless, and ferociously competitive.
+        From making his debut at the age of just 17 to becoming a multi-time World Champion, Max has broken records and redefined expectations.
+        With his aggressive driving style and relentless pursuit of victory, he’s built a reputation as one of the most exciting talents the sport has seen in decades.
+
+        Off the track, Max remains grounded, focused, and fiercely private, letting his performance on the circuit do the talking.
+        Whether it’s a daring overtake, a brilliant qualifying lap, or a race dominated from start to finish, Verstappen’s presence is electrifying.
+        As he continues to race for Red Bull Racing, Max is not just chasing wins — he’s building a dynasty.
+      </p>
+    </div>
+  </div>
+
+  <!-- Footer with Images -->
+  <footer>
+    <img src="assets/images/max1.jpg" alt="Max Verstappen Image 1" />
+    <img src="assets/images/max2.jpg" alt="Max Verstappen Image 2" />
+    <img src="assets/images/max3.jpg" alt="Max Verstappen Image 1" />
+    <img src="assets/images/max4.jpg" alt="Max Verstappen Image 2" />
+  </footer>
+
+</body>
+</html>
